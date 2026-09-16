@@ -1,8 +1,10 @@
 please execute
- 
-sudo tee /etc/paludis/repositories/Pbin-repo.conf >/dev/null <<'EOF'
+
+sudo tee /etc/paludis/repositories/Pbin.conf >/dev/null <<'EOF'
 format = e
-location = /home/filipe/exheres-first-repo
+location = /home/filipe/Pbin
+sync = git+https://github.com/filipe776655/Pbin.git
+profiles = /home/filipe/Pbin/profiles
 
 binary_destination = true
 binary_distdir = /var/cache/paludis/distfiles
